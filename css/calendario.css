@@ -1,0 +1,97 @@
+body, html{
+  color: #6e6363;
+  background-color: #0f0e0e;
+}
+
+a.nav {
+    color: #6e6363;
+    text-decoration: none;
+}
+
+
+.semana .cell-circles .td-float-description{
+  border-bottom: 2px #aaa solid;
+  display: block;
+  position: absolute;
+  background-color: #333;
+  color: #fff;
+}
+.semana {
+  padding: 1vw;
+  background-color: #1c1a1a;
+}
+.titleDay{
+      font-size: 2rem;
+    text-align: center;
+    background-color: #922f27;
+    color: #1c1a1a;
+    padding: 1rem 0px;
+    font-family: Georgia;
+    text-shadow: 1px 1px 0px #65221d;
+    font-weight: bold;
+}
+.semana .cell-circles {
+      max-width: 13vw;
+    min-width: 13vw;
+    width: 13vw;
+    display: inline-block;
+    background-color: #0a0a0a;
+    vertical-align: top;
+    padding-bottom: 2px;
+    border-radius: 0px 0px 12px 12px;
+}
+
+.semana .btn {
+  border-radius: 50%;
+  margin: 1rem 2px;
+}
+.cell-circles .btn .title{
+  display: none
+}
+
+@media screen and (min-width: 720px) {
+  .cell-circles .btn:hover .title{
+    border-radius: 0px 6px 6px 6px;
+    position: absolute;
+    display: block;
+    z-index: 2000;
+    background-color: #333;
+    color: #fff;
+    margin-top:10px;
+    padding: 1rem;
+  }
+}
+@media screen and (max-width: 720px) {
+
+    .semana {
+      padding: 0vw;
+    }
+    .cell-circles .btn .default{
+      display: none
+    }
+    
+    .cell-circles .btn .title{
+      display: block;
+      width: 100%;
+      text-align: left;
+    }
+    
+    .semana .btn {
+      padding:1rem;
+      border-radius:0px;
+      font-size:1.4rem;
+      width: 80%;
+      margin:3px 10%;
+      border-radius: 6px;
+      display: block;
+    }
+
+  .semana .cell-circles {
+    display: block;
+    max-width: 100%;
+    min-width: 100%;
+    width: 100%;
+      border-radius:0px;
+  }
+
+}
